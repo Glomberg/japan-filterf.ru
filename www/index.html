@@ -5,11 +5,71 @@
 	<title></title>
 	<link rel="stylesheet" type="text/css" href="css/css-reset.css" />
 	<link rel="stylesheet" type="text/css" href="css/styles.css" />
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link href='http://fonts.googleapis.com/css?family=Philosopher&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<script src="js/jquery-1.11.2.min.js"></script>
 	<script src="js/script.js"></script>
 </head>
 <body>
-
+<div id="main">
+<!--LEFT-SIDE - лого+форма обратного звонка+две ссылки-->
+	<div class="left-side">
+		<div class="line-top"></div>
+		<div class="logo"><a href="#"></a></div>
+		<div class="sacura"></div>
+		<div class="obratniy-zvonok">
+			<form action="" method="POST">
+				<div class="zvonok-zagolovok">ОБРАТНАЯ СВЯЗЬ</div>
+				<label for="zvonok-name">Ваше имя:</label>
+					<input type="text" name="zvonok-name" id="zvonok-name" />
+				<label for="zvonok-phone">Ваш телефон:</label>
+					<input type="text" name="zvonok-phone" id="zvonok-phone" required />
+				<label for="zvonok-message">Ваше сообщение:</label>
+					<input type="text" name="zvonok-message" id="zvonok-message" />
+				<!--<input type="submit" value="ОТПРАВИТЬ" hidden /> Запомни! Баттоны и Сабмиты это не кроссбраузерно-->
+				<a href="#" id="zvonok-submit">ОТПРАВИТЬ</a>
+			</form>
+		</div>
+		<div class="left-links">
+			<a href="#">Где купить<br>Японские фильтры?</a>
+			<a href="#">Оптовикам</a>
+		</div>
+	</div>
+<!--RIGHT-SIDE - меню+слайдер+контент-->
+	<div class="right-side">
+		<span class="slide-ugolok"></span>
+		<nav>
+			<ul>
+				<li><a href="#">Вдыхаемый<br> воздух</a></li>
+				<li><a href="#">Японские<br> фильтры</a></li>
+				<li><a href="#">Исследования</a></li>
+				<li><a href="#">Вопросы</a></li>
+				<li><a href="#">Отзывы</a></li>
+				<li><a href="#">Оформить<br> заказ</a></li>
+			</ul>
+		</nav>
+		<div class="slide"></div>
+		<!--КОНТЕНТ НАЧАЛО-->
+		<div class="content">
+		
+		</div>
+		<!--КОНТЕНТ КОНЕЦ-->
+	</div>
+<!--FOOTER-->
+<footer>
+	<div class="socials">
+		<a class="fb" href="#"></a>
+		<a class="vk" href="#"></a>
+		<a class="ok" href="#"></a>
+	</div>
+	<div class="contacts">
+		<div class="phone">8 (495) 374-71-86 (Мск)</div>
+		<div class="phone">8 (812) 643-20-47 (СПб)</div>
+		<div class="phone">8 (800) 500-51-86 (РФ)</div>
+		<div class="e-mail">Japan-filter@mail.ru</div>
+	</div>
+	<div class="copyright">&copy; 2015 "Japan-filter.ru" Все права защищены</div>
+</footer>
+</div>
 </body>
 </html>
