@@ -1,0 +1,222 @@
+﻿* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Philosopher', sans-serif;
+}
+#main {
+	width: 1267px;
+	margin: 0 auto;
+	position: relative;
+}
+a {
+	color: #0B91AF;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+a:hover {
+	color: #E20371;
+}
+/**LEFT-SIDE**/
+.left-side {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 370px;
+}
+	.line-top {
+		height: 6px;
+		width: 220px;
+		margin-left: 95px;
+		background-color: #38B3D4;
+	}
+	.logo {
+		width: 370px;
+		padding: 40px 0 0 75px;
+		margin-bottom: 70px;
+	}
+		.logo a {
+			display: block;
+			width: 230px;
+			height: 104px;
+			background: url('../images/logo.png') no-repeat 0 0;
+		}
+	.sacura {
+		width: 370px;
+		height: 574px;
+		background: url('../images/sacura.png') no-repeat left bottom;
+	}
+	.obratniy-zvonok {
+		width: 260px;
+		/*height: 334px;*/
+		background: url('../images/obratniy-zvonok-bg.png') no-repeat bottom right;
+	}
+		.obratniy-zvonok form {
+			position: relative;
+			padding-top: 70px;
+			padding-left: 50px;
+			color: #0B91AF;
+		}
+		.obratniy-zvonok .zvonok-zagolovok {
+			margin-bottom: 20px;
+			font-size: 18px;
+			background: url('../images/ellips.png') no-repeat top right;
+		}
+		.obratniy-zvonok label {
+			display: block;
+			padding-left: 10px;
+			margin-bottom: 8px;
+			font-size: 14px;
+		}
+		.obratniy-zvonok input {
+			display: block;
+			width: 190px;
+			height: 24px;
+			padding-left: 4px;
+			margin-bottom: 12px;
+			border: 2px solid #7ECCDD;
+			border-radius: 4px;
+			transition: border-color 0.3s;
+			font-size: 14px;
+		}
+			.obratniy-zvonok input:focus {
+				border-color: #B7F1F7;
+			}
+			.obratniy-zvonok input#zvonok-message {
+				margin-bottom: 28px;
+			}
+		.obratniy-zvonok a {
+			display: inline-block;
+			border-radius: 4px;
+			background-color: #1693B3;
+			color: #FFFFFF;
+			font-size: 12px;
+			font-family: 'Philosopher', sans-serif;
+			transition: opacity 0.3s;
+			margin-left: 120px;
+			padding: 5px 12px;
+			margin-bottom: 35px;
+		}
+			.obratniy-zvonok a:hover{
+				opacity: 0.75;
+			}
+	.left-links {
+		padding-top: 50px;
+		padding-left: 55px;
+	}
+		.left-links a {
+			display: inline-block;
+			font-size: 20px;
+			line-height: 24px;
+			padding-left: 32px;
+			background: url('../images/ellips.png') no-repeat 0 4px;
+			margin-bottom: 25px;
+		}
+/**RIGHT-SIDE**/
+.right-side {
+	margin-left: 370px;
+	width: 897px;
+	min-height: 1500px;
+	position: relative;
+}
+	nav {
+		height: 150px;
+	}
+		nav ul {
+			display: block;
+			padding-top: 55px;
+		}
+		nav li {
+			display: inline-block;
+			margin-right: 15px;
+			vertical-align: top;
+			text-align: center;
+		}
+			nav li a {
+				font-size: 20px;
+				vertical-align: top;
+				line-height: 24px;
+				display: block;
+				background: url('../images/ellips.png') no-repeat 0 4px;
+				padding-left: 32px;
+				z-index: 99999;
+			}
+	.slide {
+		width: 919px;
+		height: 524px;
+		margin-left: -22px;
+		background: url('../images/slide.png') no-repeat 0 0;
+		cursor: pointer;
+	}
+		.slide-ugolok {
+			position: absolute;
+			width: 100px;
+			height: 81px;
+			right: 0;
+			top: 69px;
+			background: url('../images/slide-ugolok.png') no-repeat 0 0;
+			pointer-events: none;
+		}
+/**FOOTER**/
+footer {
+	margin-top: -95px;
+	height: 250px;
+	width: 1267px;
+	background: url('../images/footer.png') no-repeat 0 0;
+	position: relative;
+	color: #0B91AF;
+}
+	footer .socials {
+		position: absolute;
+		top: 10px;
+		left: 120px;
+	}
+	.socials a {
+		display: inline-block;
+		width: 29px;
+		height: 29px;
+		margin-right: 46px;
+		border-radius: 20px;
+		-webkit-transition: transform 0.3s;
+		-moz-transition: transform 0.3s;
+		transition: transform 0.3s;
+	}
+	.socials a:hover {
+		transform: scale(1.5);
+	}
+	.socials a.fb {
+		background: url('../images/fb.png') no-repeat 0 0;
+	}
+	.socials a.vk {
+		background: url('../images/vk.png') no-repeat 1px -1px;
+	}
+	.socials a.ok {
+		background: url('../images/ok.png') no-repeat 1px 0;
+	}
+	footer .contacts {
+		position: absolute;
+		top: 97px;
+		left: 53px;
+		width: 310px;
+		height: 150px;
+		border-bottom: 7px solid #5BC8DC;
+		padding-left: 34px;
+		padding-top: 26px;
+	}
+		.contacts .phone {
+			font-size: 22px;
+			margin-bottom: 6px;
+		}
+		.contacts .e-mail {
+			line-height: 18px;
+			padding-top: 6px;
+			background: url('../images/ellips.png') no-repeat 20px 6px;
+			padding-left: 48px;
+		}
+	footer .copyright {
+		position: absolute;
+		left: 550px;
+		bottom: 20px;
+	}
