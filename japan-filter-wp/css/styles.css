@@ -6,6 +6,11 @@
 body {
 	font-family: 'Philosopher', sans-serif;
 }
+.clear {
+	width: 100%;
+	height: 0;
+	clear: both;
+}
 #main {
 	width: 1267px;
 	margin: 0 auto;
@@ -16,8 +21,14 @@ a {
 	text-decoration: none;
 	transition: color 0.3s;
 }
-a:hover {
+a:hover, a.active {
 	color: #E20371;
+}
+.phone a {
+	cursor: default;
+}
+.phone a:hover {
+	color: #0B91AF;
 }
 /**LEFT-SIDE**/
 .left-side {
@@ -35,7 +46,7 @@ a:hover {
 	.logo {
 		width: 370px;
 		padding: 40px 0 0 75px;
-		margin-bottom: 70px;
+		margin-bottom: 30px;
 	}
 		.logo a {
 			display: block;
@@ -43,6 +54,12 @@ a:hover {
 			height: 104px;
 			background: url('../images/logo.png') no-repeat 0 0;
 		}
+	.left-side .phone {
+		font-size: 22px;
+		text-align: center;
+		margin-bottom: 18px;
+		color: #0B91AF;
+	}
 	.sacura {
 		width: 370px;
 		height: 574px;
@@ -70,7 +87,7 @@ a:hover {
 			margin-bottom: 8px;
 			font-size: 14px;
 		}
-		.obratniy-zvonok input {
+		.obratniy-zvonok input, .obratniy-zvonok textarea {
 			display: block;
 			width: 190px;
 			height: 24px;
@@ -81,11 +98,13 @@ a:hover {
 			transition: border-color 0.3s;
 			font-size: 14px;
 		}
-			.obratniy-zvonok input:focus {
+			.obratniy-zvonok input:focus, .obratniy-zvonok  textarea:focus{
 				border-color: #B7F1F7;
 			}
-			.obratniy-zvonok input#zvonok-message {
+			.obratniy-zvonok textarea {
+				height: 56px;
 				margin-bottom: 28px;
+				resize: none;
 			}
 		.obratniy-zvonok a {
 			display: inline-block;
@@ -121,21 +140,21 @@ a:hover {
 	min-height: 1500px;
 	position: relative;
 }
-	nav {
+	.right-side nav {
 		height: 150px;
 	}
-		nav ul {
+		.right-side nav ul {
 			display: block;
 			padding-top: 55px;
 		}
-		nav li {
+		.right-side nav li {
 			display: inline-block;
 			margin-right: 15px;
 			vertical-align: top;
 			text-align: center;
 		}
-			nav li a {
-				font-size: 20px;
+			.right-side nav li a {
+				font-size: 18px;
 				vertical-align: top;
 				line-height: 24px;
 				display: block;
@@ -145,10 +164,11 @@ a:hover {
 			}
 	.slide {
 		width: 919px;
-		height: 524px;
+		height: 443px;
 		margin-left: -22px;
 		background: url('../images/slide.png') no-repeat 0 0;
 		cursor: pointer;
+		margin-bottom: 81px;
 	}
 		.slide-ugolok {
 			position: absolute;
@@ -161,7 +181,7 @@ a:hover {
 		}
 /**FOOTER**/
 footer {
-	margin-top: -95px;
+	/*margin-top: -95px;*/
 	height: 250px;
 	width: 1267px;
 	background: url('../images/footer.png') no-repeat 0 0;
@@ -220,3 +240,78 @@ footer {
 		left: 550px;
 		bottom: 20px;
 	}
+/**CONTENT**/
+.content {
+	padding-left: 20px;
+}
+	.content article {
+		margin-bottom: 25px;
+	}
+	.content article section {
+		position: relative;
+	}
+	.content article h2 {		
+		display: inline-block;
+		color: #0B91AF;
+		font-size: 28px;
+		font-weight: normal;
+		padding-bottom: 20px;
+		border-bottom: 5px solid #DD006C;
+		margin-bottom: 24px;
+	}
+	.content article .article-line {
+		position: absolute;
+		top: 51px;
+		left: 0;
+		width: 520px;
+		height: 2px;
+		background-color: #5BC8DC;
+		z-index: -1;
+	}
+	.content article figure {
+		float: left;
+	}
+	.content article p {
+		margin-left: 215px;
+		color: #535353;
+	}
+	.content .pagination {
+		color: #0B91AF;
+		height: 24px;
+		position: relative;
+	}
+		.content .pagination span {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.content .pagination ul {
+			position: absolute;
+			top: 0;
+			left: 105px;
+			display: inline-block;
+		}
+		.content .pagination li {
+			display: inline-block;
+			width: 24px;
+			height: 24px;
+			border-radius: 1px;
+			margin-right: 5px;
+			text-align: center;
+		}
+		.content .pagination li a {
+			display: block;
+			height: 24px;
+			line-height: 24px;
+			vertical-align: middle;
+			transition: color 0.3s, background-color 0.3s;
+		}
+		.content .pagination li a:hover, .content .pagination li a.active {
+			color: #FFFFFF;
+			background-color: #419BB5;
+		}
+/**ДЛЯ WP**/
+.single p {
+	text-indent: 20px;
+	margin-bottom: 15px;
+	margin-left: 0 !important;
+}
