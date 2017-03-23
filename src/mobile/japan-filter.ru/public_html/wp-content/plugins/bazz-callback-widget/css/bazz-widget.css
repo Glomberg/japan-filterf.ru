@@ -1,0 +1,293 @@
+.bazz-widget {
+	box-sizing: border-box;
+	position: fixed;
+	/*bottom: 50px;*/
+	right: 75px;
+	left: auto !important;
+	font-family: helvetica,sans-serif !important;
+	width: 65px;
+	height: 65px;
+	border-radius: 35px;
+	transition: width 0.5s;
+	background: #00AFF2;
+	text-align: right;
+	z-index: 665;
+}
+	::-webkit-input-placeholder {
+		color: #FFFFFF !important;
+		font-style: normal !important;
+	}
+	:-moz-placeholder {
+		color: #FFFFFF !important;
+		opacity: 1;
+		font-style: normal !important;
+	}
+	::-moz-placeholder {
+		color: #FFFFFF !important;
+		opacity: 1;
+		font-style: normal !important;
+	}
+	:-ms-input-placeholder {
+		color: #FFFFFF !important;
+		font-style: normal !important;
+	}
+	:placeholder-shown {
+		color: #FFFFFF !important;
+		font-style: normal !important;
+	}
+	.bazz-widget * {
+		box-sizing: border-box;
+	}
+	.bazz-widget.opened {
+		width: 500px;
+	}
+	.bazz-widget-close {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: -10px;
+		left: -10px;
+		background: #00AFF2;
+		display: none;
+		cursor: pointer;
+		border-radius: 20px;
+		border: 3px solid #FFFFFF;
+		background: url('../images/bazz-close-button.png') no-repeat center center;
+		font-size: 0px;
+		z-index: 666;
+	}
+		.bazz-widget.opened .bazz-widget-close {
+			display: block;
+		}
+	.bazz-widget-form {
+		display: none;
+		width: 100%;
+		text-align: center;
+		overflow: hidden;
+		height: 65px;
+		transition: margin 0.3s ease-in-out;
+		/*padding-top: 13px;*/
+		position: relative;
+	}
+		.bazz-widget.opened .bazz-widget-form {
+			/*display: block;*/
+		}
+		.bazz-widget-form label {
+			display: inline-block;
+			width: 30%;
+			color: #FFFFFF;
+			text-align: left;
+			vertical-align: middle;
+			line-height: 1.2;
+			font-size: 16px;
+		}
+			.bazz-widget-form label .bazz_time {
+				position: static;
+			}
+			.bazz-widget-form label.countdown {
+				width: 25%;
+				margin-left: 2%;
+			}
+		.bazz-widget-form input {
+			display: inline-block;
+			width: 30% !important;
+			text-align: left;
+			vertical-align: middle;
+			height: 30px;
+			border-radius: 20px !important;
+			padding: 0 !important;
+			color: #FFFFFF !important;
+			font-family: helvetica,sans-serif !important;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 1;
+			text-transform: none;
+		}
+		.bazz-widget-form input[type="tel"] {
+			background: transparent !important;
+			border: 1px solid #FFFFFF;
+			padding-left: 6px !important;
+		}
+		.bazz-widget-form input[type="tel"]:focus,
+		.bazz-widget-form input[type="text"]:focus {
+			border-color: #FFFFFF;
+		}
+		.bazz-widget-form-submit {
+			width: 25%;
+			margin-left: 2%;
+			background: #00AFF2;
+			border: 1px solid #00AFF2;
+			text-align: center;
+			font-family: helvetica,sans-serif !important;
+			font-size: 16px;
+			border-radius: 20px;
+			height: 30px;
+			color: #FFFFFF !important;
+			display: inline-block;
+			text-decoration: none !important;
+			vertical-align: middle;
+			line-height: 28px;
+			top: auto;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			position: static;
+		}
+		.bazz-widget-form input[hidden] {
+			display: none !important;
+		}
+	.bazz-widget .bazz-widget-button {
+		background: #00AFF2;
+		width: 65px;
+		height: 65px;
+		border: none;
+		text-align: center;
+		border-radius: 35px;
+		position: relative;
+		padding: 0;
+		cursor: pointer;
+		z-index: 2;
+	}
+	.bazz-widget i {
+		font-style: normal;
+		font-family: helvetica,sans-serif !important;
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		-ms-backface-visibility: hidden;
+		-o-backface-visibility: hidden;
+		backface-visibility: hidden;
+		-webkit-transition: -webkit-transform 0.5s;
+	    -moz-transition: -moz-transform 0.5s;
+	    -ms-transition: -moz-transform 0.5s;
+	    -o-transition: -o-transform 0.5s;
+	    transition: transform 0.5s;
+	    -webkit-transform-style: preserve-3d;
+	    -moz-transform-style: preserve-3d;
+	    -ms-transform-style: preserve-3d;
+	    -o-transform-style: preserve-3d;
+	    transform-style: preserve-3d; 
+	}
+		.bazz-widget.opened .bazz-widget-button,
+		.bazz-widget.opened .bazz-widget-inner-circle,
+		.bazz-widget.opened .bazz-widget-inner-border{
+			display: none;
+		}
+		.bazz-widget i:first-child {
+			background: url('../images/trubka.png') no-repeat center center;
+		}
+		.bazz-widget i:last-child {
+			-webkit-transform: rotateY( 180deg );
+			-moz-transform: rotateY( 180deg );
+			-ms-transform: rotateY(180deg);
+			-o-transform: rotateY( 180deg );
+			transform: rotateY( 180deg );
+			color: #FFFFFF;
+			font-weight: bold;
+			font-size: 14px;
+			padding-top: 18px;
+			line-height: 1.2;
+			word-wrap: break-word;
+		}
+		.bazz-widget-inner-circle {
+			width: 65px;
+			height: 65px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			border-radius: 100px;
+			background: rgba(0,175,242,0.3);
+			z-index: 1;
+			transition: all 1s ease-in-out;
+		}
+		.bazz-widget-inner-border {
+			width: 65px;
+			height: 65px;
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			border-radius: 200px;
+			border: 1px solid #00AFF2;
+			z-index: 1;
+			opacity: 1;
+		}
+	.bazz-widget-your-name {
+		color: #FFFFFF !important;
+		text-decoration: none !important;
+		border-bottom: 1px dashed #fff;
+		line-height: 1.2;
+		height: auto;
+		width: auto;
+		top: auto;
+		bottom: auto;
+		left: auto;
+		right: auto;
+		position: static;
+	}
+	.bazz-widget-form-top,
+	.bazz-widget-form-bottom {
+		width: 100%;
+		height: 65px;
+		padding-top: 13px;
+		transition: margin 0.3s ease-in-out;
+	}
+	.bazz-widget-form-top.overflow {
+		margin-top: -65px;
+	}
+	.bazz-widget-form-bottom {
+		
+	}
+		.bazz-widget-form-bottom label {
+			width: 45%;
+			vertical-align: middle;
+		}
+		.bazz-widget-form-bottom input {
+			width: 40%;
+			vertical-align: middle;
+			padding: 0 6px !important; 
+			background: transparent !important;
+			border: 1px solid #FFFFFF;
+		}
+			.bazz-widget-form-bottom ::-webkit-input-placeholder {
+				color: grey !important;
+				font-size: 12px !important;
+			}
+			.bazz-widget-form-bottom :-moz-placeholder {
+				color: grey !important;
+				font-size: 12px !important;
+				opacity: 1;
+			}
+			.bazz-widget-form-bottom ::-moz-placeholder {
+				color: grey !important;
+				font-size: 12px !important;
+				opacity: 1;
+			}
+			.bazz-widget-form-bottom :-ms-input-placeholder {
+				color: grey !important;
+				font-size: 12px !important;
+			}
+			.bazz-widget-form-bottom :placeholder-shown {
+				color: grey !important;
+				font-size: 12px !important;
+			}
+		.bazz-widget-name-close {
+			width: 34px;
+			height: 34px;
+			display: inline-block;
+			background: url('../images/ok.png') no-repeat center center;
+			background-size: contain;
+			border-radius: 50px;
+			margin-left: 10px;
+			vertical-align: middle;
+			top: auto;
+			bottom: auto;
+			left: auto;
+			right: auto;
+			position: static;
+		}

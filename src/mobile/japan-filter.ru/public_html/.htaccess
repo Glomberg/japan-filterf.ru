@@ -1,0 +1,26 @@
+<FilesMatch ".(gif|jpeg|jpg|png|css|js|eot|woff|ttf|svg)$">
+Order Allow,Deny
+Allow from all
+</FilesMatch>
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# Mail.RU bot block
+Order Deny,Allow
+Deny from 217.69.134
+
+<Files xmlrpc.php>
+Satisfy any
+Order allow,deny
+Deny from all
+</Files>
+
+# END WordPress

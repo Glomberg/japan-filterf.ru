@@ -1,5 +1,3 @@
-﻿<?php get_header(); ?>
-<div class="content">
+<?php get_header(); ?>
 	404 not found
-</div>
 <?php get_footer(); ?>
